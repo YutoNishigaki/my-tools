@@ -1,5 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
+import { testLog } from '@packages/domain';
 
 @Injectable()
 export class AppService {
@@ -24,6 +25,8 @@ export class AppService {
     // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
     const payload = await response.json();
     console.log(payload);
+
+    void testLog();
 
     return 'hoge';
   }

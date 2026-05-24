@@ -1,0 +1,10 @@
+# compiled output
+/dist
+/build
+
+# Tests
+/coverage
+/.nyc_output
+
+# IDEs and editors
+/.idea
